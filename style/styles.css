@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+canvas{
+    
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+}
+.color{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.color-list{
+    display: flex;
+}
+.style-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
