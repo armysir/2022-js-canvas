@@ -9,23 +9,27 @@
 </head>
 <body>
     <canvas></canvas>
+    <div class="color-list">
+        <input id="color" type="color">
+        <div class="color" style="background-color: #e74c3c" data-color= "#e74c3c" ></div>
+        <div class="color" style="background-color: #e67e22" data-color= "#e67e22" ></div>
+        <div class="color" style="background-color: #f1c40f" data-color= "#f1c40f" ></div>
+        <div class="color" style="background-color: #2ecc71" data-color= "#2ecc71" ></div>
+        <div class="color" style="background-color: #3498db" data-color= "#3498db" ></div>
+        <div class="color" style="background-color: #2980b9" data-color= "#2980b9" ></div>
+        <div class="color" style="background-color: #9b59b6" data-color= "#9b59b6" ></div>
+        <div class="color" style="background-color: #8e44ad" data-color= "#8e44ad" ></div>
+    </div>
     <div class="style-box">
         <input id="line-width" type="range" min="1" max="100" value="5" step="0.1" >
-        <div class="color-list">
-            <input id="color" type="color">
-            <div class="color" style="background-color: #e74c3c" data-color= "#e74c3c" ></div>
-            <div class="color" style="background-color: #e67e22" data-color= "#e67e22" ></div>
-            <div class="color" style="background-color: #f1c40f" data-color= "#f1c40f" ></div>
-            <div class="color" style="background-color: #2ecc71" data-color= "#2ecc71" ></div>
-            <div class="color" style="background-color: #3498db" data-color= "#3498db" ></div>
-            <div class="color" style="background-color: #2980b9" data-color= "#2980b9" ></div>
-            <div class="color" style="background-color: #9b59b6" data-color= "#9b59b6" ></div>
-            <div class="color" style="background-color: #8e44ad" data-color= "#8e44ad" ></div>
-        <div>
-            <button id="mode-btn">배경</button>
-            <button id="destroy-btn">초기화</button>
-            <button id="eraser-btn">지우기</button>
-            <input type="file" accept="images/*" id="file">
+        <div class="btn-list">
+            <button class="btn-list__child"  id="mode-btn">배경</button>
+            <button class="btn-list__child"  id="destroy-btn">초기화</button>
+            <button  class="btn-list__child" id="eraser-btn">지우기</button>
+            <input  class="btn-list__child" type="file" accept="images/*" id="file">
+            <input  class="btn-list__child" type="text" placeholder="글을 쓰려면 더블클릭" id="text">
+            <button  class="btn-list__child" id="save">이미지 저장</button>
+        </div>
     </div>
     <script src="js/app.js"></script>
 </body>
